@@ -7,4 +7,4 @@ Si vous développez une application Android et que celle-ci dépasse les 50Mo, a
 &nbsp;
 <img src="http://infinitestudio.fr/blog/wp-content/uploads/2013/08/Tuto-APKEF-Application-lecture-vid%C3%A9o.png"/>
 
-Voir le tuto complet : http://infinitestudio.fr/blog/2013/08/20/apk-expansion-files/
+Voir le tuto complet sur notre blog : http://infinitestudio.fr/blog/2013/08/20/apk-expansion-files/
