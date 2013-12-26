@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tuto APK Expansion Files</string>
+    
+    <string name="download_title">Téléchargement des fichiers d\'extension</string>
+
+    <string name="menu_scrat_01">Vidéo Scrat 01</string>
+    <string name="menu_scrat_02">Vidéo Scrat 02</string>
+    
+    <!-- Infos APK Extension Files -->
+    <string name="video_scrat_01">scrat_01.avi</string>
+    <string name="video_scrat_02">scrat_02.avi</string>
+
+    <string name="info_text">Appuyez sur le bouton \"Menu\" de votre téléphone pour choisir la vidéo à afficher.</string>
+    
+    <!-- Downloader service -->
+    <string name="notification_download_complete">Téléchargement terminé</string>
+    <string name="notification_download_failed">Echec du téléchargement</string>
+
+    <string name="state_unknown">Erreur inconnue</string>
+    <string name="state_idle">En attente de téléchargement</string>
+    <string name="state_fetching_url">Recherche de téléchargement en cours</string>
+    <string name="state_connecting">Connexion au serveur</string>
+    <string name="state_downloading">Téléchargement des ressources</string>
+    <string name="state_completed">Téléchargement terminé</string>
+    <string name="state_paused_network_unavailable">Le réseau n\'est pas disponible</string>
+    <string name="state_paused_network_setup_failure">Téléchargement en pause, tester le site internet</string>
+    <string name="state_paused_by_request">Téléchargement en pause</string>
+    <string name="state_paused_wifi_unavailable">Le WIFI n\'est pas disponible</string>
+    <string name="state_paused_wifi_disabled">Le WIFI est désactivé</string>
+    <string name="state_paused_roaming">Téléchargement en pause, itinérance</string>
+    <string name="state_paused_sdcard_unavailable">Téléchargement en pause car la carte SD n\'est pas disponible</string>
+    <string name="state_failed_unlicensed">Echec du téléchargement, veuillez vous rendre sur google play</string>
+    <string name="state_failed_fetching_url">Echec du téléchargement, ressources non-disponibles</string>
+    <string name="state_failed_sdcard_full">Echec du téléchargement, la carte SD est pleine</string>
+    <string name="state_failed_cancelled">Téléchargement annulé</string>
+    <string name="state_failed">Echec du téléchargement</string>
+
+    <string name="kilobytes_per_second">%1$s KB/s</string>
+    <string name="time_remaining">Temps restant: %1$s</string>
+    <string name="time_remaining_notification">reste %1$s </string>
+    
+    <string name="text_paused_cellular">Voulez-vous télécharger le contenu depuis votre réseau mobile ? Ceci peut engendrer un surcoût selon votre opérateur</string>
+    <string name="text_paused_cellular_2">Le téléchargement reprendra lorsque le réseau WIFI sera de nouveau opérationnel</string>
+    <string name="text_button_resume_cellular">Continuer le téléchargement</string>
+    <string name="text_button_wifi_settings">Paramètres Wi-Fi</string>
+    <string name="text_verifying_download">Vérification du téléchargement</string>
+    <string name="text_validation_complete">Téléchargement terminé. OK pour sortir.</string>
+    <string name="text_validation_failed">Echec de validation du téléchargement.</string>
+    <string name="text_button_pause">Mettre en pause</string>
+    <string name="text_button_resume">Relancer le téléchargement</string>
+    <string name="text_button_cancel">Annuler</string>
+    <string name="text_button_cancel_verify">Annuler la vérification</string>
+
+</resources>

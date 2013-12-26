@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.infinitestudio.apkef"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <!-- Nécessaire pour accéder à Google Play Licensing -->
+	<uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+
+	<!-- Nécessaire pour télécharger les fichiers depuis Google Play -->
+	<uses-permission android:name="android.permission.INTERNET" />
+
+	<!-- Nécessaire pour garder le CPU actif pendant le téléchargement des fichiers (Ne garde pas l'écran allumé) -->
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+
+	<!-- Nécessaire pour connaître l'état de la connexion réseau et répondre aux changements -->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+	<!-- Nécessaire pour vérifier si la connexion WI-FI est activée -->
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+	<!-- Nécessaire pour lire et écrire les fichiers d'extension sur un stockage partagé -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.TutoActivity"
+            android:label="@string/app_name" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.DownloaderActivity"
+            android:label="@string/download_title"
+            android:screenOrientation="portrait">
+        </activity>
+        <service android:name=".service.APKEFTutoDownloaderService" />
+        <receiver android:name=".receiver.APKEFTutoAlarmReceiver" />
+        <provider android:name=".provider.ZipFileContentProvider"
+            android:authorities="com.infinitestudio.apkef.provider.ZipFileContentProvider"
+            android:exported="false">
+	    </provider>
+    </application>
+
+</manifest>
